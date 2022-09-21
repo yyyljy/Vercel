@@ -6,6 +6,20 @@
   font-style: normal;
 }
 
+:root {
+  --mainColor: #ff6108;
+}
+
+@keyframes bgFadeOut {
+  0% {
+    background-color: var(--mainColor);
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
 body {
   font-family: "MYYeongnamnu";
 }
@@ -48,6 +62,7 @@ button:active {
   text-decoration: underline solid var(--mainColor);
 }
 
-:root {
-  --mainColor: #ff6108;
+.myLanguage {
+  animation-name: bgFadeOut;
+  animation-duration: 10s;
 }
