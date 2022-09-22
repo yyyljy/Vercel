@@ -6,15 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>멋쟁이 사자처럼</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
+    <h1>심장아</h1>
+    <h1 class="animate__animated animate__wobble">뛰어라~</h1>
+    <div>
+      <span>이름 : </span>
+      <input class="nameText" type="text" />
+      <span>생년월일 : </span>
+      <input class="birthText" type="text" />
+      <button onclick="generate('.nameText','.birthText','.colorImg')">
+        Generate!
+      </button>
+    </div>
+    <div>
+      <span>나만의 색깔</span>
+      <br />
+      <img src="colorUrl" alt="" class="colorImg" />
+    </div>
     <div>
       <span class="myName">What is your name?</span>
-      <button onclick="revealMyInfo('My name is 이정윤.', '.myName', gold)">
+      <button
+        onclick="revealMyInfo('My name is 이정윤.', '.myName', 'blue', 'heartBeat')"
+      >
         Confirm
       </button>
       <button
-        onclick="revealMyInfo('내 이름은 이정윤 입니다.', '.myName', gold)"
+        onclick="revealMyInfo('내 이름은 이정윤 입니다.', '.myName', 'pink', 'slideIn')"
       >
         확인
       </button>
@@ -22,9 +44,14 @@
     <div>
       <span class="myJob">What is your job?</span>
       <button
-        onclick="revealMyInfo('I am super ultra programmer.', '.myJob', '#654321')"
+        onclick="revealMyInfo('I am super ultra programmer.', '.myJob', 'red', 'bgFadeOut')"
       >
         Confirm
+      </button>
+      <button
+        onclick="revealMyInfo('내 직업은 뭐지..!?', '.myJob', 'blue', 'slideIn')"
+      >
+        확인
       </button>
     </div>
     <div>
@@ -35,7 +62,7 @@
         Confirm
       </button>
       <button
-        onclick="revealMyInfo('제로콜라를 좋아합니다.', '.myFavorite', 'pink')"
+        onclick="revealMyInfo('제로콜라를 좋아합니다.', '.myFavorite', 'pink', 'bgFadeOut')"
       >
         확인
       </button>
@@ -45,13 +72,12 @@
 </html>
 <div>
   <span class="myLanguage">My foreign language skill is ...</span>
-  <button onclick="revealMyInfo('En ★★★☆☆', '.myLanguage', '#000000')">
+  <button
+    onclick="revealMyInfo('En ★★★☆☆', '.myLanguage', '#000000', 'bgFadeOut')"
+  >
     English
   </button>
   <button onclick="revealMyInfo('Cn ★☆☆☆☆', '.myLanguage', '#000000')">
     Chinese
-  </button>
-  <button onclick="revealMyInfo('Jp ★★★★☆', '.myLanguage', '#000000')">
-    Japanese
   </button>
 </div>

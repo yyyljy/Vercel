@@ -10,6 +10,28 @@
   --mainColor: #ff6108;
 }
 
+@keyframes heartBeat {
+  0% {
+    font-size: 36px;
+  }
+
+  25% {
+    font-size: 44px;
+  }
+
+  50% {
+    font-size: 36px;
+  }
+
+  75% {
+    font-size: 44px;
+  }
+
+  100% {
+    font-size: 36px;
+  }
+}
+
 @keyframes bgFadeOut {
   0% {
     background-color: var(--mainColor);
@@ -20,27 +42,30 @@
   }
 }
 
-body {
-  font-family: "MYYeongnamnu";
-}
+@keyframes slideIn {
+  0% {
+    margin-left: 10%;
+  }
 
-h1 {
-  background-color: blueviolet;
+  100% {
+    margin-left: 0%;
+  }
 }
 
 span {
   font-size: 50px;
 }
 
+body {
+  font-family: "MYYeongnamnu";
+}
+
 button {
-  /* background-color: white;
-    border: 0px solid white; */
   background-color: blanchedalmond;
   border: 10px solid lightblue;
   padding: 10px 40px;
   margin-top: 50px;
   box-shadow: -4px -4px 0 -2px var(--mainColor), 4px 4px 0 -2px var(--mainColor);
-  font-size: 50px;
   font-family: "MYYeongnamnu";
 }
 
@@ -60,9 +85,4 @@ button:active {
 
 .myName {
   text-decoration: underline solid var(--mainColor);
-}
-
-.myLanguage {
-  animation-name: bgFadeOut;
-  animation-duration: 10s;
 }
