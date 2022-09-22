@@ -10,10 +10,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <h1>심장아</h1>
     <h1 class="animate__animated animate__wobble">뛰어라~</h1>
+    <h3
+      style="margin-left: 300px"
+      class="animate__animated animate__heartBeat animate__delay-2s animate__slower animate__infinite"
+    >
+      ANIMATE_CSS_HEARTBEAT
+    </h3>
+    <h1 class="text-3xl font-bold underline">TAILWIND CSS</h1>
+    <h1
+    class="text-3xl font-bold underline bg-red-500 md:bg-blue-500 lg:bg-green-500"
+  >
+    Hello, World! Please Chage your Browser Size! <===>
+  </h1>
+      TEST FOR TAILWIND
+    </h1>
     <div>
       <span>이름 : </span>
       <input class="nameText" type="text" />
@@ -67,17 +82,28 @@
         확인
       </button>
     </div>
+
+    <div class="grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div class="bg-red-100 p-4 m-4">BOX 1</div>
+      <div class="bg-red-100 p-4 m-4">BOX 1</div>
+      <div class="bg-red-100 p-4 m-4">BOX 1</div>
+      <div class="bg-red-100 p-4 m-4">BOX 1</div>
+      <div class="bg-red-100 p-4 m-4">BOX 1</div>
+      <div class="bg-red-100 p-4 m-4">BOX 1</div>
+    </div>
+    
+    <div>
+      <span class="todayLunch">오늘의 점심 메뉴는 ?</span>
+      <button onclick="choiceTodayLunch()">선택</button>
+    </div>
+    <div>
+      <span class="aboutMe">What do you want to know about me?</span>
+      <button onclick="getMyProfile('name')">Name</button>
+      <button onclick="getMyProfile('age')">Age</button>
+      <button onclick="getMyProfile('job')">Job</button>
+      <button onclick="getMyProfile('favorite')">Favorite</button>
+      <button onclick="getMyProfile('motto')">Motto</button>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
-<div>
-  <span class="myLanguage">My foreign language skill is ...</span>
-  <button
-    onclick="revealMyInfo('En ★★★☆☆', '.myLanguage', '#000000', 'bgFadeOut')"
-  >
-    English
-  </button>
-  <button onclick="revealMyInfo('Cn ★☆☆☆☆', '.myLanguage', '#000000')">
-    Chinese
-  </button>
-</div>

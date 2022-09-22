@@ -1,3 +1,41 @@
+const todayLunch = [
+  "알리오 올리오",
+  "김치찌개",
+  "짜장면",
+  "마라탕",
+  "초밥",
+  "햄버거",
+  "굶기",
+  "피자",
+  "닭가슴살",
+  "짬뽕",
+  "탕수육",
+  "쌀국수",
+  "라면",
+  "만두",
+];
+
+const myProfile = {
+  name: "LEE",
+  age: 33,
+  job: "Blockchain Developer",
+  favorite: "Zero coke",
+  motto: "건강한 육체에 건강한 정신이 깃든다.",
+};
+
+function choiceTodayLunch() {
+  let htmlElement = document.querySelector(".todayLunch");
+
+  htmlElement.innerHTML =
+    todayLunch[Math.floor(Math.random() * todayLunch.length)];
+}
+
+function getMyProfile(key) {
+  let htmlElement = document.querySelector(".aboutMe");
+
+  htmlElement.innerHTML = myProfile[key];
+}
+
 function revealMyInfo(myInfo, className, color, animationName) {
   let htmlElement = document.querySelector(className);
 
